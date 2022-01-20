@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Page</title>
+    <link rel="stylesheet" href="patient.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="box">
+                    <div class="header">
+                        <h1>New Patient Enrollment</h1>
+                        <h2>company name</h2>
+                    </div>
+                <hr>
+                <form action="">
+                   <label for="name1">Name: </label>
+                        <input class="fname1" type="text" id="firstname" name="firstname" placeholder="First name">
+                        <input class="lname1" type="text" id="lastname" name="lastname" placeholder="Last name">
+                    <br> <br>
+                    <span>Date of Birth</span> 
+                    <input class="dob1" type="date" id="dob" name="dob">
+                    <br> <br>
+                    <span>Sex</span> 
+                    <select name="sex" id="sex">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <br> <br>
+                    <span>Contat Number:</span> 
+                    <input style="border:none;" type="tel" id="phone" name="phone" placeholder="+91-6666-999999" pattern="+91-[0-9]4-[0-9]6" required> <br> <br>
+                    <span>E-mail</span>
+                    <input class="emailid" type="email" id="email" name="email" placeholder="ex: myname@example.com">
+                    <br> <br>
+                    <span>Address:</span>
+                    <div class="addr_content">
+                        <input class="addr" type="text" id="streetaddr" name="streetaddr"> <br> <br>
+                        <input class="addr" type="text" id="streetaddrln2" name="streetaddrln2"> <br> <br>
+                        <input class="addr" type="text" id="city" name="city"> <br> <br>
+                        <input class="addr" type="text" id="state" name="state"> <br> <br>
+                        <input class="addr" type="text" id="zipcode" name="zipcode">
+                    </div>
+                    <br> <br>
+                    <span>Marital Status:</span>
+                    <select name="maritalstat" id="maritalstat">
+                        <option value="married">Married</option>
+                        <option value="unmarried">Single</option>
+                        <option value="unmarried">Divorced</option>
+                    </select>
+                    <hr> <br> <br>
+                    <span>Emergency Contact:</span> <br> <br>
+                    <input class="fname2" type="text" placeholder="First Name">
+                    <input  class="lname2" type="text" placeholder="Last Name">
+                    <br> <br>
+                    <span>Relationship</span><br> <br>
+                    <input type="text" id="guardian" name="guardian"> <br> <br>
+                    <span>Contact Number:</span> <br> <br>
+                    <input type="tel" id="phone" name="phone" placeholder="+91-6666-999999" pattern="+91-[0-9]4-[0-9]6" required> 
+                    <hr> <br> <br>
+                    <span>Weight(pounds)</span> <br>
+                    <input type="text" id="weight" name="weight"> <br> <br>
+        
+                    <span>Height(inches)</span> <br>
+                    <input type="text" id="height" name="height"> <br> <br>
+        
+                    <span>Taking any medications, currently?</span> &ensp;
+                    <input class="radiobtn" type="radio" id="yes" name="question1" value="yes">
+                    <label for="yes">Yes</label> &ensp;
+                    <input class="radiobtn" type="radio" id="no" name="question1" value="no">
+                    <label for="no">No</label> <br> <br> <br>
+                    <div class="textarea1">
+                        <span>If yes, please list it here</span> &ensp;
+                        <textarea rows="4" cols="50" name="comment" form="usrform" placeholder="Enter text here..." ></textarea>
+                    </div>
+                    <div class="btn">
+                        <button class="enrollbtn" name="enroll" type="submit" value="HTML">Enroll</button>
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- <input type="file" id="myFile" name="filename">
+            <input type="submit"> -->
